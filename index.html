@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercy Okonkwo | Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="hero">
+
+  <!-- Navigation -->
+    <nav class="navbar">
+      <div><a class="logo" href="#hero">Mercy</a></div>
+      <div class="menu-toggle" onclick="toggleMenu()" id="menu-toggle">☰</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a id="contact-btn" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" >
+    <div class="hero-info">
+      <h1>Hi, I'm Mercy Okonkwo</h1>
+      <p>Data Analyst | Turning raw data into smart decisions</p>
+      <a href="Mercy_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+    <div class="hero-img">
+      <img src="media/img2.png" alt="">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a data analyst dedicated to transforming complex data into clear, actionable insights that drive strategic decision-making. With proficiency in Excel, SQL, Tableau, and Power BI, I specialize in uncovering trends, optimizing performance, and building interactive dashboards that support business growth. 
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span>Excel</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Tableau</span>
+      <span>Jupyter</span>
+      <span>R</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Sales Data Dashboard</h3>
+      <p>Analyzed 2 years of retail sales data and built an interactive Power BI dashboard showing trends, top products, and sales growth.</p>
+      <p><strong>Tools:</strong> Excel, Power BI</p>
+      <a href="#">View Dashboard</a> | <a href="#">LinkedIn</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Sales Data Dashboard</h3>
+      <p>Analyzed 2 years of retail sales data and built an interactive Power BI dashboard showing trends, top products, and sales growth.</p>
+      <p><strong>Tools:</strong> Excel, Power BI</p>
+      <a href="#">View Dashboard</a> | <a href="#">LinkedIn</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Customer Churn Prediction</h3>
+      <p>Built a machine learning model to predict customer churn using logistic regression and data preprocessing techniques in Python.</p>
+      <p><strong>Tools:</strong> Python, Pandas, Scikit-learn</p>
+      <a href="#">View Notebook</a> | <a href="#">LinkedIn</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Customer Churn Prediction</h3>
+      <p>Built a machine learning model to predict customer churn using logistic regression and data preprocessing techniques in Python.</p>
+      <p><strong>Tools:</strong> Python, Pandas, Scikit-learn</p>
+      <a href="#">View Notebook</a> | <a href="#">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Whatsapp: <a href="https://wa.me/2348023456789?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank">
+    07039505908</a></p>
+    <p>Email: <a href="mailto:attohval@gmail.com">okonkwodiamond6@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/mercy-okonkwo" target="_blank">linkedin.com/in/mercy-okonkwo</a></p>
+    
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Mercy Okonkwo</p>
+  </footer>  
+
+    <script>
+
+  // Show current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const menuToggle = document.getElementById('menu-toggle');
+
+    navLinks.classList.toggle('active');
+
+    // Change icon
+    if (navLinks.classList.contains('active')) {
+      menuToggle.textContent = '×';
+    } else {
+      menuToggle.textContent = '☰';
+    }
+  }
+
+</script>
+
+</body>
+</html>
