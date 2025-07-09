@@ -109,16 +109,12 @@
 
 #about {
   width: 100%;
-  padding: 32px;
+  padding: 64px 32px 0;
 }
-/* .section {
-  width: 100%;
-  padding: 3rem 2rem 2rem;
-} */
 
 #skills {
   width: 100%;
-  padding: 32px;
+  padding: 64px 32px 0;
 }
 .skills-list {
   display: flex;
@@ -139,7 +135,7 @@
 
 #projects {
   width: 100%;
-  padding: 32px;
+  padding: 64px 32px 0;
 }
 .project-card {
   background: #e5f0ff;
@@ -162,6 +158,12 @@
   height: 176px;
 }
 
+.v-more {
+  background: #0078d7;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #e5f0ff;
+}
 #contact {
   width: 100%;
   padding: 32px;
@@ -172,6 +174,15 @@
   padding: 16px;
   background: #222;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+#footer a {
+  color: #8e8c8c;
+  font-weight: bold;
 }
 
 /*--- Responsive styling---*/
@@ -246,7 +257,7 @@
     padding: 4px 16px;
   }
   .nav-links {
-    padding: 32px 4px;
+    padding: 32px 16px;
   }
  .hero {
   flex-direction: column;
@@ -265,7 +276,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-/*     height: 100vh; */
+    /* height: 100vh; */
   }
 
   .hero-info h1,
@@ -276,6 +287,11 @@
  .hero-info {
     order: 2;
     margin-bottom: 48px;
+ }
+
+ #footer {
+  gap: 8px;
+  flex-direction: column;
  }
  
 }
